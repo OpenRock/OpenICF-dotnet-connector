@@ -70,7 +70,7 @@
     <Zip Files="@(ZipFiles)" WorkingDirectory="$(OutputPath)"
       ZipFileName="$(CommonBuildDir)\$(AssemblyName)-$(Major).$(Minor).$(Build).$(Revision).zip" Condition=" '$(Configuration)'=='Release' "/>
     <Zip Files="@(ZipFiles)" WorkingDirectory="$(OutputPath)"
-      ZipFileName="$(CommonBuildDir)\$(AssemblyName)-$(Major).$(Minor).$(Build).$(Revision)-SNAPSHOT.zip" Condition=" '$(Configuration)'=='Debug' "/>
+      ZipFileName="$(CommonBuildDir)\$(AssemblyName)-$(Major).$(Minor).$(Build).$(Revision).zip" Condition=" '$(Configuration)'=='Debug' "/>
   </Target>
   
   <Target Name="NUnit" DependsOnTargets="Build">
